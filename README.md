@@ -19,4 +19,3 @@ Edit the ami_backup_config.py file
 Set up a cron task to run the script ami_backup.py
 
 
-
