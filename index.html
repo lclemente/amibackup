@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Amibackup : Python script to automate AMI backup of AWS EC2 instances" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Amibackup</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/lclemente/amibackup">View on GitHub</a>
+
+          <h1 id="project_title">Amibackup</h1>
+          <h2 id="project_tagline">Python script to automate AMI backup of AWS EC2 instances</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/lclemente/amibackup/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/lclemente/amibackup/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="amibackup" class="anchor" href="#amibackup"><span class="octicon octicon-link"></span></a>AMIBACKUP</h1>
+
+<p>Author: Luigi Clemente<br>
+Email: <a href="mailto:luigi@luigiclemente.com">luigi@luigiclemente.com</a><br>
+Ver. 1.0  </p>
+
+<p>Python script to automate AMI backup of AWS EC2 instances.<br>
+The script will create an AMI backup image of each server in the config file, no reboot.<br>
+For each server will deregister all images (and relative snapshots) older than the threshold set in the config file.<br>
+Access to AWS accounts will use access key and secret, as set in the Boto config file profiles.  </p>
+
+<h2>
+<a name="requirements" class="anchor" href="#requirements"><span class="octicon octicon-link"></span></a>Requirements</h2>
+
+<p>Python 2.7 (version I used, it might work on others)<br>
+AWS SDK for Python: Boto (<a href="http://aws.amazon.com/sdkforpython/">http://aws.amazon.com/sdkforpython/</a>)  </p>
+
+<h2>
+<a name="install" class="anchor" href="#install"><span class="octicon octicon-link"></span></a>Install</h2>
+
+<p>Install Python and Boto<br>
+Configure boto.config credentials to access your AWS accounts (see boto_config.sample)<br>
+Clone amibackup git repository to a local folder<br>
+Copy and rename ami_backup_config.py.sample to ami_backup_config.py<br>
+Edit the ami_backup_config.py file<br>
+Set up a cron task to run the script ami_backup.py  </p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Amibackup maintained by <a href="https://github.com/lclemente">lclemente</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
