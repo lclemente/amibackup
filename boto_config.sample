@@ -1,0 +1,11 @@
+[profile profile_one]
+aws_access_key_id = xxxx
+aws_secret_access_key = xxxx
+
+[profile profile_two]
+aws_access_key_id = xxxx
+aws_secret_access_key = xxx
+
+[Credentials]
+aws_access_key_id = xxxx
+aws_secret_access_key = xxxxx
