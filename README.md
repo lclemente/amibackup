@@ -1,12 +1,17 @@
-amibackup
+AMIBACKUP
+Author: Luigi Clemente
+Email: luigi@luigiclemente.com 
+Vers. 1.0
 =========
-
-Python script to automate AMI backup of AWS EC2 instances 
+Python script to automate AMI backup of AWS EC2 instances.
+The script will create an AMI backup image of each server in the config file, no reboot.
+For each server will deregister all images (and relative snapshots) older than the threshold set in the config file.
+Access to AWS accounts will use access key and secret, as set in the Boto config file profiles.
 
 Requirements
 ------
 
-Python 2.7 (version I used, it might work on others) 
+Python 2.7 (version I used, it might work on others)
 AWS SDK for Python: Boto (http://aws.amazon.com/sdkforpython/)
 
 Install
