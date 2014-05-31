@@ -1,12 +1,12 @@
 amibackup
 =========
 
-Python script to automate AMI backup of AWS EC2 instances
+Python script to automate AMI backup of AWS EC2 instances 
 
 Requirements
 ------
 
-Python 2.7 (version I used, it might work on others)
+Python 2.7 (version I used, it might work on others) 
 AWS SDK for Python: Boto (http://aws.amazon.com/sdkforpython/)
 
 Install
