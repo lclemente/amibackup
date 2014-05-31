@@ -1,7 +1,6 @@
 AMIBACKUP  
 Author: Luigi Clemente  
 Email: luigi@luigiclemente.com   
-Vers. 1.0  
 =========
 Python script to automate AMI backup of AWS EC2 instances.  
 The script will create an AMI backup image of each server in the config file, no reboot.  
